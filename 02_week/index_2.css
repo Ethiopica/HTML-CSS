@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(6, 82, 61, 0.826);
+}
+h1 {
+  font-style: oblique;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #fffcfc;
+  background-color: rgb(14, 85, 46);
+  width: 100%; /* Takes half of the web, previously it was 100% */
+  height: 100px;
+  padding: 20px;
+  border: 2px dashed white;
+  border-radius: 5px;
+}
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgb(129, 114, 95);
+  padding: 20px;
+  border: dotted 2px red;
+}
+a {
+  color: rgb(5, 73, 52);
+  background-color: antiquewhite;
+  width: 50; /* you can not ovride the default*/
+  height: 100px; /* you can not ovride the default*/
+}
+/* padding 20Px */
+.box {
+  background-color: aqua;
+  width: 50px;
+  height: 50px;
+  border: top 2px solid blue;
+  border-right: 5px solid yellow;
+  border-bottom: 10px solid red;
+  border-left: 20px solid purple;
+  border-radius: 12px;
+  padding: 8px;
+  border: 20px solid pink;
+  margin: 40px;
+}
+p {
+  color: yellow;
+}
+.box p {
+  color: red;
+}
+.circle {
+  background-color: bisque;
+  padding: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-radius: 50% 25% 10% 0;
+  outline: 10px solid red;
+  border: 10px solid black;
+}
+h6 {
+  border: 4px solid rgb(235, 230, 230);
+  margin: 100px;
+}
