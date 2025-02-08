@@ -39,7 +39,6 @@ header h1 {
 }
 /* Hero Section */
 .hero {
-  background-color: #0ea367;
   color: white;
   text-align: center;
   padding: 60px 0;
@@ -51,7 +50,6 @@ header h1 {
   text-decoration: solid;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 15px;
   background-color: #6d1f4a;
   font-weight: bold;
   font-size: 12px;
@@ -144,6 +142,6 @@ footer {
 a {
   color: mistyrose;
   text-align: center;
-  font-family: "DM Sans";
+  font-family: "Montserrat";
   font-size: 22px;
 }
