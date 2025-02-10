@@ -5,6 +5,11 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   background-color: rgb(28, 86, 67);
   padding: 10px;
   font-family: "Montserrat";
@@ -43,7 +48,6 @@ div {
   margin-bottom: 50px;
   padding: 2%;
   float: left;
-  margin-left: 400px;
 }
 
 .column {
