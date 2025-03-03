@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and typography */
+body {
+  font-family: "Montserrat", serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  padding-top: 60px; /* Gives space for fixed navbar */
+}
+
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+}
+a {
+  text-decoration: none;
+  color: rgb(230, 221, 221);
+  text-align: right;
+}
+
+a:hover {
+  color: #c5e59e;
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #34495e;
+  color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+  color: white;
+}
+
+nav {
+  margin-left: auto; /* This pushes the navigation to the right */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px; /* Adds spacing between the links */
+}
+
+nav ul li a {
+  font-size: 18px;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #3498db;
+}
+
+/* Section Styles */
+section {
+  padding: 60px 20px;
+}
+#about {
+  display: flex; /* Use flexbox to display content side by side */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Center the content horizontally */
+  gap: 30px; /* Space between the image and paragraph */
+  background-color: #ecf0f1;
+}
+
+#about img {
+  width: 400px; /* Set width of the image */
+  height: 350px; /* Set height of the image */
+  object-fit: cover; /* Maintain aspect ratio and ensure image covers the box */
+}
+
+#about p {
+  max-width: 600px; /* Optional: set max-width for the paragraph */
+  font-size: 18px; /* Optional: adjust font size */
+  text-align: left;
+}
+/* Projects Section */
+
+section#projects {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#projects .project-container {
+  display: flex;
+  justify-content: center; /* Aligns the cards horizontally */
+  gap: 20px; /* Adds space between the cards */
+  padding-bottom: 10px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px; /* Fixed width for project cards */
+  margin: 15px;
+  background-color: #f2f2f2;
+  padding: 60px;
+  border-radius: 8px;
+}
+
+.project h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.project p {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+}
+
+section#skills {
+  background-color: #ecf0f1;
+  text-align: center;
+}
+
+.skill-card {
+  display: inline-block;
+  width: 20%;
+  margin: 15px;
+  text-align: center;
+}
+
+.skill-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+progress {
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background-color: #bdc3c7;
+}
+
+progress[value] {
+  background-color: #3498db;
+}
+
+.skill-card span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Styling for the contact form section */
+#contactme {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Targeting the submit button */
+#submitBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+#submitBtn:hover {
+  background-color: #45a049;
+}
+
+/* Footer Styles */
+
+footer {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #34495e;
+  color: #fff;
+  padding: 30px 20px;
+  z-index: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li a:hover {
+  background-color: #3498db;
+}
