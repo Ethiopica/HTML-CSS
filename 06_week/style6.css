@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", serif;
+  font-optical-sizing: auto;
+  background-color: rgb(238, 251, 252);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+header {
+  background-color: rgb(75, 75, 75);
+  color: white;
+  padding: 10px 0;
+  padding: 20px;
+}
+main section {
+  background-color: #00b894;
+  padding: 10%;
+}
+main h1 {
+  text-align: left;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+a {
+  color: white;
+  text-align: right;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  font-family: "Nunito Sans", serif;
+}
+/* Footer Section */
+footer {
+  background-color: #1ea69d;
+  color: rgb(176, 46, 17);
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 100%; /* Make sure footer spans the full width */
+  position: relative; /* Make sure it behaves normally within the document flow */
+  left: 0; /* Make sure it starts from the very left */
+  padding: 20px 0; /* Optional: adjust padding as needed */
+  margin-top: auto;
+}

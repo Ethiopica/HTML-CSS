@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and general styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styling */
+header {
+  background-color: #2e36c9;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f1c40f;
+}
+
+/* Section styling */
+section {
+  padding: 40px 20px;
+  margin: 20px 0;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+section p {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* About Section */
+#about {
+  background-color: #66a58c;
+  color: white;
+}
+
+#about p {
+  font-size: 20px;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #b5da21;
+}
+
+.project {
+  background-color: #fff;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Hover effect for the project cards */
+.project:hover {
+  transform: translateY(-5px); /* Lift the card up slightly */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.project a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2e36c9;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+  background-color: #1e26a5;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #f4f4f4;
+}
+
+#skills ul {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  width: 25%;
+  font-size: 18px;
+  text-align: center;
+  width: 150px; /* Adjust the width for each card */
+  border-radius: 50%; /* Make the skill card round */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for skill cards */
+#skills li:hover {
+  transform: translateY(-5px); /* Lift the skill card up slightly */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Contact Section */
+#contact {
+  background-color: #fff;
+}
+
+#contact p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #1ea69d;
+  color: rgb(176, 46, 17);
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project {
+    margin: 10px 0;
+    width: 100%; /* Ensure projects take full width on smaller screens */
+  }
+
+  #skills li {
+    width: 100%; /* Stack skills vertically on small screens */
+    margin: 10px 0;
+    border-radius: 50%; /* Keep round shape */
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  footer {
+    padding: 15px 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .project {
+    width: 30%; /* Set each project card to take up 30% of the container width */
+    margin: 15px;
+    display: inline-block;
+  }
+
+  #skills li {
+    width: 150px; /* Set fixed width for each skill card */
+  }
+}

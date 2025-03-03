@@ -1,0 +1,135 @@
+/* Resetting some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: auto;
+}
+
+header {
+  background-color: #2e36c9fa;
+  color: white;
+  padding: 40px;
+}
+
+header h1 {
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* Hero Section */
+.hero {
+  background-color: #66a58c;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.list h2 {
+  font-size: 48px;
+  margin-bottom: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* Menu Section */
+.list {
+  background-color: #b5da21;
+  padding: 40px 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.list h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.list-items {
+  display: flex;
+  justify-content: space-around;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.list-items h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.list-item ul {
+  list-style-type: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.list-item ul li {
+  font-size: 18px;
+}
+
+/* link Section */
+.link {
+  background-color: #fff;
+  padding: 40px 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  align-items: center;
+}
+.link h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Footer Section */
+footer {
+  background-color: #1ea69d;
+  color: rgb(176, 46, 17);
+  margin-top: auto;
+  padding: auto;
+  width: 100%;
+  position: relative; /* Make sure it behaves normally within the document flow */
+  left: 0; /* Make sure it starts from the very left */
+  padding: 20px 0; /* Optional: adjust padding as needed */
+}
+footer h2 {
+  margin-left: 10%;
+  margin-top: 20px;
+}
+footer a {
+  margin-right: 20%;
+  justify-content: center;
+}

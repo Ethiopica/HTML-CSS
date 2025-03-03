@@ -1,0 +1,19 @@
+/* Flexbox Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: center; /* Vertically center the items */
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.menu a:hover {
+  background-color: #555;
+}

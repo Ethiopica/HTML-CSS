@@ -1,0 +1,28 @@
+div.container {
+  display: flex;
+  flex-direction: row;
+  background-color: purple;
+}
+
+div.box {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  background-color: orange;
+  margin: 8px;
+}
+
+/* displays the box third in order */
+div.box1 {
+  order: 3;
+}
+
+/* displays the box first in order */
+div.box2 {
+  order: 1;
+}
+
+/* displays the box second in order */
+div.box3 {
+  order: 2;
+}

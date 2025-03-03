@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- must always have -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Responsive Design Example</title>
+    <!-- must always have -->
+    <link rel="stylesheet" href="style1.css" />
+    <!-- Link to the external CSS file -->
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Design with Mobile-First Approach</h1>
+    </header>
+
+    <div class="main-content">
+      <h2>Responsive Images Example</h2>
+
+      <picture>
+        <source srcset="/images /walia.jpg" media="(max-width: 600px)" />
+        <source
+          srcset="/images /walia.jpg"
+          media="(min-width: 601px) and (max-width: 1024px)"
+        />
+        <img
+          src="/images /walia.jpg"
+          alt="Responsive Image"
+          class="responsive-img"
+        />
+      </picture>
+
+      <p>This page adjusts its layout and images based on your screen size.</p>
+    </div>
+  </body>
+</html>
