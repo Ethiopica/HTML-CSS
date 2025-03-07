@@ -94,9 +94,10 @@ section {
 #about p {
   max-width: 600px; /* Optional: set max-width for the paragraph */
   font-size: 18px; /* Optional: adjust font size */
-  text-align: justify;
+  text-align: left;
 }
 /* Projects Section */
+
 section#projects {
   background-color: #fff;
   padding: 60px 20px;
@@ -208,6 +209,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 textarea {
@@ -224,6 +226,7 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  font-family: inherit;
 }
 
 #submitBtn:hover {
