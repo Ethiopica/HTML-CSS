@@ -1,0 +1,622 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+/* Body and typography */
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  padding-top: 60px; /* Gives space for fixed navbar */
+}
+
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+}
+a {
+  text-decoration: none;
+  color: rgb(230, 221, 221);
+  text-align: right;
+}
+
+a:hover {
+  color: #c5e59e;
+}
+
+/* Header Styles */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #34495e;
+  color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+}
+
+nav {
+  margin-left: auto; /* This pushes the navigation to the right */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px; /* Adds spacing between the links */
+}
+
+nav ul li a {
+  font-size: 18px;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #3498db;
+}
+
+/* Section Styles */
+section {
+  padding: 60px 20px;
+}
+#about {
+  display: flex; /* Use flexbox to display content side by side */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Center the content horizontally */
+  gap: 150px; /* Space between the image and paragraph */
+  background-color: #ecf0f1;
+}
+
+#about img {
+  width: 400px; /* Set width of the image */
+  height: 350px; /* Set height of the image */
+  object-fit: cover; /* Maintain aspect ratio and ensure image covers the box */
+}
+
+#about p {
+  max-width: 800px; /* Optional: set max-width for the paragraph */
+  font-size: 1.3rem; /* Optional: adjust font size */
+  text-align: left;
+}
+/* Projects Section */
+
+section#projects {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#projects .project-container {
+  display: flex;
+  justify-content: center; /* Aligns the cards horizontally */
+  gap: auto; /* Adds space between the cards */
+  padding-bottom: 10px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 15px;
+  background-color: #f2f2f2;
+  padding: 60px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.project h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.project p {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+}
+
+section#skills {
+  background-color: #ecf0f1;
+  text-align: center;
+}
+
+.skill-card {
+  display: inline-block;
+  width: 20%;
+  margin: 15px;
+  text-align: center;
+}
+
+.skill-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+progress {
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background-color: #bdc3c7;
+}
+
+progress[value] {
+  background-color: #3498db;
+}
+
+.skill-card span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Styling for the contact form section */
+#contactme {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Targeting the submit button */
+#sendBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #32ac36;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+#sendBtn:hover {
+  background-color: #45a049;
+}
+
+/* Footer Styles */
+
+footer {
+  position: absolute;
+  width: 100%;
+  background-color: #34495e;
+  color: #fff;
+  padding: 30px 20px;
+  z-index: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li a:hover {
+  background-color: #3498db;
+}
+
+footer .button {
+  padding: 1rem 2rem;
+  background-color: #308633;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: inherit;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: none;
+}
+
+/* back-to-top.css */
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #32ac36;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+#backToTopBtn:hover {
+  background-color: #45a049;
+}
+
+/* When scrolled down 20px or more, show the button */
+.show {
+  display: block;
+  opacity: 1;
+}
+
+
+/* Light Mode (Default) */
+:root {
+    --base-color: #f4f4f9;  /* Light background color for the main area */
+    --base-variant: #e1e5ea;  /* Slightly darker background for containers */
+    --text-color: #080a0c;  /* Darker text color for better readability */
+    --secondary-text: #7f8c8d;  /* Lighter gray for secondary text */
+    --primary-color: #73B9E8;  /* Primary accent color for buttons, links */
+    --accent-color: #ff6f61;  /* Slightly more vibrant accent color for highlights */
+    --link-color: #3498db;  /* Links should be the same as the primary color */
+  }
+  
+  /* Dark Mode */
+  .darkmode {
+    --base-color: #121212;  /* Dark background for the main area */
+    --base-variant: #1e1e1e;  /* Darker background for containers */
+    --text-color: #e8eff1;  /* Lighter text color for contrast against dark background */
+    --secondary-text: #bdc3c7;  /* Light gray for secondary text */
+    --primary-color: #73B9E8;  /* Lighter, cooler blue for contrast */
+    --accent-color: #ff7043;  /* Warm accent color for a balanced look */
+    --link-color: #2980b9;  /* Links should match primary accent */
+  }
+  
+  /* General Styles */
+  body {
+    min-height: 100vh;
+    background-color: var(--base-color);
+    color: var(--text-color);
+    font-family: 'Outfit', sans-serif;
+  }
+  header {
+    background-color: var(--base-color);
+    color: var(--text-color);
+  }
+  header,
+  section {
+    padding: 20px min(50px, 7%);
+  }
+  
+  section .about-container {
+    background-color: var(--base-variant);
+  }
+  
+  header h1 {
+    color: var(--text-color);
+  }
+  body header nav a  {
+    color: var(--text-color);
+  }
+  section#about {
+    background-color: var(--base-variant);
+    color: var(--text-color);
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 30px;
+    cursor: pointer;
+    clip-path: circle(calc(50% - 40px));
+    --_p: 100px;
+    --_g1: radial-gradient(50% 50%,#e71e24 90%,#0000); /* color 1 */
+    --_g2: radial-gradient(50% 50%,#fcc010 90%,#0000); /* color 2 */
+    --_g3: radial-gradient(50% 50%,#85c341 90%,#0000); /* color 3 */
+    --_g4: radial-gradient(50% 50%,#eb2288 90%,#0000); /* color 4 */
+    background:
+       var(--_g1) calc(20% - var(--_p)) calc(20% - var(--_p)),
+       var(--_g2) calc(80% + var(--_p)) calc(10% - var(--_p)),
+       var(--_g3) calc(80% + var(--_p)) calc(80% + var(--_p)),
+       var(--_g3) 55%                   calc(12% - var(--_p)),
+       var(--_g1) calc(18% - var(--_p)) calc(88% + var(--_p)),
+       var(--_g2) calc(10% - var(--_p)) calc(70% + var(--_p)),
+       var(--_g2) calc(88% + var(--_p)) 40%,
+       var(--_g1) calc(82% + var(--_p)) calc(28% - var(--_p)),
+       var(--_g4) calc(12% - var(--_p)) 30%,
+       var(--_g4) 65%                   calc(85% + var(--_p)),
+       var(--_g3) calc(20% - var(--_p)) calc(10% - var(--_p)),
+       var(--_g4) calc(30% - var(--_p)) calc(85% + var(--_p));
+    background-size: 15px 15px, 20px 20px, 30px 30px;
+    background-repeat: no-repeat;
+    filter: grayscale(80%);
+    transition: .5s;
+  }
+  img:hover {
+    filter: grayscale(0%);
+    clip-path: circle(50%);
+    --_p: 0px;
+  }
+  
+  p {
+    margin: 10px 0 20px 0;
+    color: var(--secondary-text);
+  }
+  section#about p {
+    color: var(--text-color);
+  }
+
+  section#projects h2 {
+    color: var(--text-color);
+  }
+  div.project h3 {
+    color: var(--text-color);
+  }
+  div.project p {
+    color: var(--text-color);
+  }
+  section#projects {
+    background-color: var(--base-color);
+    color: var(--text-color);
+  }
+ div.project-containers {
+    background-color: var(--base-variant);
+  }
+
+  div.project {
+    background-color: var(--base-variant);
+    color: var(--text-color);
+  }
+  section#skills {
+    background-color: var(--base-variant);
+    color: var(--text-color);
+  }
+  #skill-container {
+    background-color: var(--base-color);
+    color: var(--text-color);
+  }
+  section#skills h2 {
+    color: var(--text-color);
+  }
+  li.skill-card h3 {
+    color: var(--text-color);
+  }
+  li.skill-card span {
+    color: var(--text-color);
+  }
+  section#contactme{
+    background-color: var(--base-color);
+    color: var(--text-color);
+  }
+   
+    div.contact-form-container {
+        background-color: var(--base-variant);
+        color: var(--text-color);
+    }
+    div.contact-form-container h2 {
+      color: var(--text-color);
+  }
+input#name {
+    background-color: var(--base-variant);
+    color: var(--text-color);
+}
+input#email {
+    background-color: var(--base-variant);
+    color: var(--text-color);
+}
+textarea#message{
+    background-color: var(--base-variant);
+    color: var(--text-color);
+}
+  footer {
+    background-color: var(--base-variant);
+    color: var(--text-color);
+  }
+  section.contact-form-container {
+    background-color: var(--primary-color);
+    color: white; /* Keep text white on dark background for contrast */
+  }
+
+  body footer nav a {
+    color: var(--text-color);
+  }
+  
+  button {
+    border: none;
+    padding: 0.8em 2em;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    font: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--accent-color);
+    opacity: 0.8;
+  }
+  
+  .cta-button {
+    background-color: var(--accent-color);
+  }
+  
+  #theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  
+  #theme-switch svg {
+    fill: var(--primary-color);
+  }
+  
+  #theme-switch svg:last-child {
+    display: none;
+  }
+  
+  .darkmode #theme-switch svg:first-child {
+    display: none;
+  }
+  
+  .darkmode #theme-switch svg:last-child {
+    display: block;
+  }
+  
+/*
+:root {
+  --base-color: white;
+  --base-variant: #ecf0f1;
+  --text-color: #111528;
+  --secondary-text: #232738;
+  --primary-color: #3a435d;
+  --accent-color: #bbc1c9;
+}
+.darkmode {
+  --base-color: #070b1d;
+  --base-variant: #101425;
+  --text-color: #3ba6af;
+  --secondary-text: #060607;
+  --primary-color: #292a2e;
+  --accent-color: #75797e;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: Poppins;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--base-color);
+  color: var(--text-color);
+}
+header,
+section {
+  padding: 30px min(50px, 7%);
+}
+section .about-container {
+  background-color: var(--base-variant);
+}
+p {
+  margin: 10px 0 20px 0;
+  color: var(--secondary-text);
+}
+
+section .project-container {
+  background-color: var(--base-color);
+  color: var(--text-color);
+}
+
+#skill-container {
+  background-color: var(--base-color);
+  color: var(--text-color);
+}
+.contact-form-container {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+button {
+  border: none;
+  padding: 0.8em 2em;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  font: inherit;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cta-button {
+  background-color: var(--accent-color);
+}
+#theme-switch {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+#theme-switch svg {
+  fill: var(--primary-color);
+}
+#theme-switch svg:last-child {
+  display: none;
+}
+.darkmode #theme-switch svg:first-child {
+  display: none;
+}
+.darkmode #theme-switch svg:last-child {
+  display: block;
+}
