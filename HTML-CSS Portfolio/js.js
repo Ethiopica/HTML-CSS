@@ -35,3 +35,7 @@ themeSwitch.addEventListener("click", () => {
   darkmode = localStorage.getItem("darkmode");
   darkmode !== "active" ? enableDarkmode() : disableDarkmode();
 });
+
+function flipCard(card) {
+  card.classList.toggle("flipped");
+}

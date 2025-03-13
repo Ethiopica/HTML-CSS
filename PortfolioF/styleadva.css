@@ -327,11 +327,3 @@ button {
 button:hover {
   opacity: 0.8;
 }
-
-/* Define the dark theme */
-[data-theme="dark"] {
-  --background-color: #121212;
-  --text-color: #ffffff;
-  --button-bg-color: #333333;
-  --button-text-color: #ffffff;
-}

@@ -8,35 +8,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        text-align: center;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      nav ul li {
+        display: inline;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1rem;
+      }
+
+      #projects {
+        padding: 50px 20px;
+        width: 80%;
+      }
+
+      #projects h2 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .project-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .project {
+        width: 200px;
+        height: 300px;
+        perspective: 1000px;
+        cursor: pointer;
+      }
+
+      .project-inner {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+      }
+
+      .project-front,
+      .project-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .project-front {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+      }
+
+      .project-back {
+        background-color: #ff5722;
+        color: white;
+        text-align: center;
+        transform: rotateY(180deg);
+      }
+
+      .project.flipped .project-inner {
+        transform: rotateY(180deg);
+      }
+
+      /* Add styles for other sections */
+      section {
+        width: 80%;
+        margin-bottom: 50px;
+      }
+
+      footer {
+        margin-top: 50px;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
   </head>
   <body>
     <header>
       <button id="theme-switch">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="24px"
-          viewBox="0 -960 960 960"
-          width="24px"
-        >
-          <path
-            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
-          />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="24px"
-          viewBox="0 -960 960 960"
-          width="24px"
-        >
-          <path
-            d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
-          />
-        </svg>
+        <!-- SVG icons for theme switching -->
       </button>
       <h1>Elias Bekele Tekle</h1>
       <nav>
@@ -48,8 +139,9 @@
         </ul>
       </nav>
     </header>
+
     <section id="about">
-      <img src="2255.jpeg" alt="" />
+      <img src="2255.JPEG" alt="" />
       <p>
         Hello! I'm Elias, and I'm a Full Stack Web Developer. I'm passionate
         about creating interactive and functional websites that meet users'
@@ -67,81 +159,52 @@
         <div class="project" onclick="flipCard(this)">
           <div class="project-inner">
             <div class="project-front">
-              <img src="pie.jpeg" alt="Project Image" class="project-image" />
+              <h3>Pancake 1</h3>
+              <p>Description of project.</p>
             </div>
             <div class="project-back">
-              <p><strong> Pancake 1 <br> <br>
-              </strong>This project is focused on creating an engaging and user-friendly online platform for selling delicious, freshly made pancakes. The page will feature a visually appealing layout with high-quality images of pancakes, a simple navigation system for easy ordering, and a secure checkout process. Users will be able to choose from a variety of pancake options, including custom toppings and extras. The page will be optimized for both desktop and mobile devices to ensure a smooth shopping experience.
+              <h3>Pancake 1</h3>
+              <p>More details about the project.</p>
             </div>
           </div>
         </div>
-        <!-- <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-container">
-        <div class="project">
-          <h3>Pancake 1</h3>
-          <p>Description of project.</p>
-        </div>
-      -->
         <div class="project" onclick="flipCard(this)">
           <div class="project-inner">
             <div class="project-front">
-              <img src="pancake.jpeg" alt="Project Image" class="project-image" />
+              <h3>Pancake 2</h3>
+              <p>Description of project.</p>
             </div>
             <div class="project-back">
-              <p><strong> Pancake 2 <br> <br>
-              </strong> To enhance the user experience, we incorporated LocalStorage and JavaScript objects to store and manage user-selected choices. This allows customers to customize their pancake order by selecting different toppings and extras. The page retains these choices even after refreshing the browser. The use of LocalStorage ensures that users can easily view and modify their selections before finalizing the order and get summary of it. 
+              <h3>Pancake 2</h3>
+              <p>More details about the project.</p>
             </div>
           </div>
         </div>
-
-        <!-- <div class="project">
-          <h3>Pancake 2</h3>
-          <p>Description of project.</p>
-        </div> -->
-
-        <!-- <div class="project">
-          <h3>Little Zoo 1</h3>
-          <p>Description of project.</p>
-        </div> -->
-
         <div class="project" onclick="flipCard(this)">
           <div class="project-inner">
             <div class="project-front">
-              <img src="panc.jpg" alt="Project Image" class="project-image" />
+              <h3>Little Zoo 1</h3>
+              <p>Description of project.</p>
             </div>
-            <div class="project-back"> 
-            
-              <p><strong> Pancake 3 <br> <br>
-              </strong> The third part of the pancake project is a page that collect all the orders that comes from the customers. With the help of the local storage this page will fetch every orders made by customers and will display it for the kitchen staffs. It also shows the status of each order as PENDING, READY and DELIVERED. Inadition to the statuses there is a cancel button that allow the chef to cancel orders. 
-              </p>
+            <div class="project-back">
+              <h3>Little Zoo 1</h3>
+              <p>More details about the project.</p>
             </div>
           </div>
         </div>
-
         <div class="project" onclick="flipCard(this)">
           <div class="project-inner">
             <div class="project-front">
-              <img src="zo.jpg" alt="Project Image" class="project-image" />
+              <h3>Little Zoo 2</h3>
+              <p>Description of project.</p>
             </div>
             <div class="project-back">
-              <p><strong> Little Zoo <br> <br>
-              </strong>More details about the project.
-                More details about the project.
-                More details about the project.
-                More details about the project.
-                More details about the project.
-                More details about the project.
+              <h3>Little Zoo 2</h3>
+              <p>More details about the project.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-        <!-- <div class="project">
-          <h3>Little Zoo 2</h3>
-          <p>Description of project.</p>
-        </div>
-      </div> -->
     </section>
 
     <section id="skills">
@@ -203,6 +266,11 @@
       </nav>
     </footer>
     <button id="backToTopBtn">Back to Top</button>
-    <script src="js.js"></script>
+
+    <script>
+      function flipCard(card) {
+        card.classList.toggle("flipped");
+      }
+    </script>
   </body>
 </html>
