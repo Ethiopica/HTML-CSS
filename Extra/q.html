@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="q.css" />
+  </head>
+  <body>
+    <!-- Header with Navigation -->
+    <header>
+      <button id="menu-toggle">☰</button>
+      <!-- Mobile menu button -->
+      <h1>Elias Bekele Tekle</h1>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <img src="profile.jpg" alt="Elias Bekele Tekle" />
+      <p>
+        Hello! I'm Elias, a Full Stack Web Developer passionate about creating
+        dynamic web applications.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="project1.jpg" alt="Project 1" />
+        <p>
+          Pancake Ordering System - An interactive platform for ordering
+          customized pancakes.
+        </p>
+      </div>
+      <div class="project">
+        <img src="project2.jpg" alt="Project 2" />
+        <p>Zoo Management - A web app to manage zoo animals and visitors.</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Laravel</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Elias B. Tekle</p>
+    </footer>
+  </body>
+</html>

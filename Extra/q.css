@@ -1,0 +1,202 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+#menu-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navigation Menu */
+nav {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #007bff;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Show menu when active */
+nav.active {
+  display: block;
+}
+
+/* Sections */
+section {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Projects */
+.project {
+  margin-bottom: 15px;
+}
+
+/* Skills */
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+ul li {
+  background: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Tablet Styles (Min 768px) */
+@media (min-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+
+  nav {
+    display: flex;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 15px;
+  }
+
+  nav ul li {
+    padding: 0;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  /* Two-column layout for projects */
+  .project {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .project img {
+    width: 40%;
+  }
+}
+
+/* Desktop Styles (Min 1024px) */
+@media (min-width: 1024px) {
+  body {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .project {
+    gap: 30px;
+  }
+
+  .project img {
+    width: 30%;
+  }
+
+  ul {
+    justify-content: center;
+  }
+}

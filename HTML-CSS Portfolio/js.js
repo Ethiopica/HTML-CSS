@@ -1,5 +1,8 @@
 // Get the button
 const backToTopButton = document.getElementById("backToTopBtn");
+const overlay = document.getElementById("overlay");
+const showOverlayBtn = document.getElementById("showOverlayBtn");
+const closeOverlayBtn = document.getElementById("closeOverlayBtn");
 
 // Show the button after scrolling down 20px
 window.onscroll = function () {
@@ -39,3 +42,21 @@ themeSwitch.addEventListener("click", () => {
 function flipCard(card) {
   card.classList.toggle("flipped");
 }
+
+showOverlayBtn.addEventListener("click", function () {
+  overlay.style.display = "block";
+});
+
+closeOverlayBtn.addEventListener("click", function () {
+  overlay.style.display = "none";
+});
+
+("use strict");
+
+// Toggle Navigation Menu for Mobile
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("nav");
+
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});

@@ -17,6 +17,17 @@
   </head>
   <body>
     <header>
+      <!-- The Overlay -->
+      <div id="overlay" class="overlay">
+        <div class="overlay-content">
+          <h2>Welcome to My Portfolio</h2>
+          <p>Explore more about Elias Bekele Tekle.</p>
+          <button id="closeOverlayBtn">See More</button>
+        </div>
+        <div class="content">
+          <button id="showOverlayBtn">See More</button>
+        </div>
+      </div>
       <button id="theme-switch">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -39,13 +50,20 @@
           />
         </svg>
       </button>
-      <h1></h1>
+
       <h1>Elias Bekele Tekle</h1>
-      <nav>
+      <button class="hamburger" id="hamburger">☰</button>
+
+      <!-- Navigation -->
+      <nav id="nav">
+        <!--<nav>-->
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li>
+            <a href="./indexG.html">Gallery</a>
+          </li>
           <li><a href="#contactme">Contact Me</a></li>
         </ul>
       </nav>
@@ -69,7 +87,12 @@
         <div class="project" onclick="flipCard(this)">
           <div class="project-inner">
             <div class="project-front">
-              <img src="pie.jpeg" alt="Project Image" class="project-image" />
+              <img
+                src="pie.jpeg"
+                alt="Project Image"
+                class="project-image"
+                style="width: 100%"
+              />
             </div>
             <div class="project-back">
               <p>
@@ -89,21 +112,14 @@
             </div>
           </div>
         </div>
-        <!-- <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-container">
-        <div class="project">
-          <h3>Pancake 1</h3>
-          <p>Description of project.</p>
-        </div>
-      -->
         <div class="project" onclick="flipCard(this)">
           <div class="project-inner">
             <div class="project-front">
               <img
-                src="pancake.jpeg"
+                src="pie.jpeg"
                 alt="Project Image"
                 class="project-image"
+                style="width: 100%"
               />
             </div>
             <div class="project-back">
@@ -123,21 +139,15 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="project">
-          <h3>Pancake 2</h3>
-          <p>Description of project.</p>
-        </div> -->
-
-        <!-- <div class="project">
-          <h3>Little Zoo 1</h3>
-          <p>Description of project.</p>
-        </div> -->
-
         <div class="project" onclick="flipCard(this)">
           <div class="project-inner">
             <div class="project-front">
-              <img src="panc.jpg" alt="Project Image" class="project-image" />
+              <img
+                src="panc.jpg"
+                alt="Project Image"
+                class="project-image"
+                style="width: 100%"
+              />
             </div>
             <div class="project-back">
               <p>
